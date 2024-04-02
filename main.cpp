@@ -1,6 +1,13 @@
 #include <iostream>
+#include "timer.hpp"
+#include "timerStates.hpp"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    Timer timer(new HomeState);
+    timer.runState();
+    timer.runState();
+    timer.runState();
+    timer.runState();
+    timer.runState();
+    timer.runState();
 }
